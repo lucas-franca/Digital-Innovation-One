@@ -9,4 +9,5 @@ Repositório que tem como objetivo documentar os projetos criados durante o apre
 
 | Nome | Proposta |
 | ------ | ------ |
-| [Desafio Github]() | Criar um repositório para documentar o conteúdo aprendido no módulo. |
+| [Desafio Github](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/desafio-github) | Criar um repositório para documentar o conteúdo aprendido no módulo. |
+| [Introdução - HTML5 e CSS3](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/introducao-html5-css3) | Criar um repositório para documentar o conteúdo aprendido no módulo. |
