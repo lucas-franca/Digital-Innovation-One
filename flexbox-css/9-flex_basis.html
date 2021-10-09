@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex basis</title>
+</head>
+
+  <style>
+    .flex-container{
+      max-width: 500px;
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .items{
+      background-color: orangered;
+      color: white;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .b-auto{
+      flex-basis: auto;
+    }
+
+    .b0{
+      flex-basis: 0;
+    }
+
+    .fg-1{
+      flex-grow: 1;
+    }
+
+    .fg-2{
+      flex-grow: 2;
+    }
+
+    .w100{
+      flex-basis: 100px;
+    }
+  </style>
+<body>
+  
+  <h1>basis auto</h1>
+  <div class="flex-container">
+    <div class="items b-auto fg-1">a</div>
+    <div class="items b-auto fg-1">bbb</div>
+    <div class="items b-auto fg-2">c</div>
+    <div class="items b-auto fg-1">ddddd</div>
+  </div>
+
+  <h1>basis 0</h1>
+  <div class="flex-container">
+    <div class="items b0 fg-1">a</div>
+    <div class="items b0 fg-1">bbb</div>
+    <div class="items b0 fg-2">c</div>
+    <div class="items b0 fg-1">ddddd</div>
+  </div>
+
+  <h1>basis com width</h1>
+  <div class="flex-container">
+    <div class="items w100">a</div>
+    <div class="items w100">bbb</div>
+    <div class="items w100">c</div>
+    <div class="items w100">ddddd</div>
+  </div>
+</body>
+</html>
