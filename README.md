@@ -11,3 +11,4 @@ Repositório que tem como objetivo documentar os projetos criados durante o apre
 | ------ | ------ |
 | [Desafio Github](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/desafio-github) | Criar um repositório para documentar o conteúdo aprendido no módulo. |
 | [Introdução - HTML5 e CSS3](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/introducao-html5-css3) | Princípios básicos e semântica |
+| [Flexbox - CSS](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/flexbox-css) | Fundamentos e projeto prático |
