@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex (atalho)</title>
+</head>
+
+  <style>
+    .flex-container{
+      display: flex;
+      border: 1px solid black;
+      max-width: 400px;
+    }
+
+    .items{
+      background-color: brown;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .flex-1{
+      flex: 1; /*grow=1, shrink=1, basis=0*/
+    }
+
+    .w200{
+      width: 200px;
+      /*min-width: 250px;*/
+    }
+    
+    .flex-2{
+      flex: 2; /*grow=2, shrink=1, basis=0*/
+    }
+  </style>
+
+<body>
+  <h1>Flex 1</h1>
+  <div class="flex-container">
+    <div class="items flex-1">a</div>
+    <div class="items flex-1">bbb</div>
+    <div class="items flex-1">cc</div>
+    <div class="items flex-1">d</div>
+    <div class="items flex-1">ee</div>
+  </div>
+
+  <h1>Flex 2</h1>
+  <div class="flex-container">
+    <div class="items flex-1">a</div>
+    <div class="items flex-2">bbb</div>
+    <div class="items flex-2">cc</div>
+    <div class="items flex-1">d</div>
+    <div class="items flex-1">ee</div>
+  </div>
+
+  <h1>width ignorado / basis=0</h1>
+  <div class="flex-container">
+    <div class="items flex-1 w200">a</div>
+    <div class="items flex-1 w200">bbb</div>
+    <div class="items flex-1 w200">cc</div>
+    <div class="items flex-1 w200">d</div>
+    <div class="items flex-1 w200">ee</div>
+  </div>
+</body>
+</html>

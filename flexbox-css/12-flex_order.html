@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex order</title>
+</head>
+
+  <style>
+    .flex-container{
+      display: flex;
+      max-width: 350px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .items{
+      flex: 1;
+      background-color: brown;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      margin: 5px;
+    }
+
+    .o0{
+      order: 0;
+    }
+
+    .o1{
+      order: 1;
+    }
+    
+    .o2{
+      order: 1;
+    }
+    
+    .o3{
+      order: 1;
+    }
+
+    .column{
+      flex-direction: column;
+    }
+  </style>
+
+<body>
+  <h1>order 0</h1>
+  <div class="flex-container">
+    <div class="items o0">a</div>
+    <div class="items o0">b</div>
+    <div class="items o0">c</div>
+    <div class="items o0">d</div>
+  </div>
+
+  <h1>order 0</h1>
+  <div class="flex-container">
+    <div class="items o3">a</div>
+    <div class="items o2">b</div>
+    <div class="items o0">e</div>
+    <div class="items o1">f</div>
+  </div>
+
+  <h1>column / order 0</h1>
+  <div class="flex-container column">
+    <div class="items o0">a</div>
+    <div class="items o0">b</div>
+    <div class="items o0">c</div>
+    <div class="items o0">d</div>
+  </div>
+
+  <h1>column / order 0</h1>
+  <div class="flex-container column">
+    <div class="items o3">a</div>
+    <div class="items o2">b</div>
+    <div class="items o0">e</div>
+    <div class="items o1">f</div>
+  </div>
+</body>
+</html>

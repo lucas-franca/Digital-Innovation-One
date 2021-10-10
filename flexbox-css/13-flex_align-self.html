@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex - Align self</title>
+</head>
+
+  <style>
+  .flex-container{
+    max-width: 350px;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  .items{
+    background-color: brown;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .center{
+    align-self: center;
+  }
+
+  .start{
+    align-self: flex-start;
+  }
+
+  .end{
+    align-self: flex-end;
+  }
+
+  .stretch{
+    align-self: stretch;
+  }
+
+  .baseline{
+    align-self: baseline;
+  }
+  </style>
+
+<body>
+
+  <div class="flex-container">
+    <div class="items start">aa</div>
+    <div class="items end">bb</div>
+    <div class="items stretch">cccc cc ccccc cccc dddddddd dddddd ccc cc cccc cccc ccc cc ccc ccc</div>
+    <div class="items baseline">ee</div>
+    <div class="items start">ffff fff</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex shrink</title>
+</head>
+
+  <style>
+    .flex-container{
+      display: flex;
+      border: 1px solid black;
+      max-width: 350px;
+    }
+
+    .items{
+      background-color: orangered;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .s-0{
+      flex-shrink: 0;
+      flex-basis: 100px;
+    }
+
+    .s-1{
+      flex-shrink: 1;
+    }
+
+    .s-2{
+      flex-shrink: 2;
+    }
+
+    .s-3{
+      flex-shrink: 3;
+    }
+
+    .fg-1{
+      flex-grow: 1;
+    }
+  </style>
+<body>
+  <h1>padrão</h1>
+  <div class="flex-container">
+    <div class="items s-1 fg-1">a</div>
+    <div class="items s-1 fg-1">b</div>
+    <div class="items s-1 fg-1">c</div>
+    <div class="items s-1 fg-1">d</div>
+    <div class="items s-1 fg-1">e</div>
+  </div>
+
+  <h1>conteudo maior</h1>
+  <div class="flex-container">
+    <div class="items s-1 fg-1">a</div>
+    <div class="items s-1 fg-1">b</div>
+    <div class="items s-1 fg-1">ccccccc</div>
+    <div class="items s-1 fg-1">d</div>
+    <div class="items s-1 fg-1">e</div>
+  </div>
+
+  <h1>shrink 0 / basis 100px</h1>
+  <div class="flex-container">
+    <div class="items s-0 fg-1">a</div>
+    <div class="items s-0 fg-1">b</div>
+    <div class="items s-0 fg-1">ccccccc</div>
+    <div class="items s-0 fg-1">d</div>
+    <div class="items s-0 fg-1">e</div>
+  </div>
+
+  <h1>shrink 0 / basis 100px</h1>
+  <div class="flex-container">
+    <div class="items s-0 fg-1">a</div>
+    <div class="items s-0 fg-1">b</div>
+    <div class="items s-0 fg-1">ccccccc</div>
+    <div class="items s-0 fg-1">d</div>
+    <div class="items s-0 fg-1">e</div>
+  </div>
+
+  <h1>shrink mixed / basis 100px</h1>
+  <div class="flex-container">
+    <div class="items s-1 fg-1">a</div>
+    <div class="items s-2 fg-1">The generated</div>
+    <div class="items s-2 fg-1">c</div>
+    <div class="items s-3 fg-1">d</div>
+  </div>
+
+</body>
+</html>
