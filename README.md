@@ -12,4 +12,4 @@ Repositório que tem como objetivo documentar os projetos criados durante o apre
 | [1 - Desafio: Github](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/1-Desafio-github) | Criar um repositório para documentar o conteúdo aprendido no módulo. |
 | [2 - Introdução - HTML5 e CSS3](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/2-introducao-html5-css3) | Princípios básicos e semântica |
 | [3 - Flexbox - CSS](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/3-flexbox-css) | Fundamentos e projeto prático |
-| [4 - Desafio: Netflix](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/4-desafio-netflix) | Recriar a interface do netflix utilizando HTML e CSS |
+| [4 - Desafio: Netflix](https://github.com/lucas-franca/Digital-Innovation-One/tree/main/4-Desafio-netflix) | Recriar a interface do netflix utilizando HTML e CSS |
